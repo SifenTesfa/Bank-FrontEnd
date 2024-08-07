@@ -1,6 +1,6 @@
-import Header from './Header';
 import React, { useState, useEffect } from 'react';
-import{Link} from 'react-router-dom'
+import { Link } from 'react-router-dom';
+
 function ProductList() {
     const [data, setData] = useState([]);
 
@@ -44,7 +44,6 @@ function ProductList() {
 
     return (
         <div>
-            <Header />
             <div className="overflow-x-auto p-4">
                 <table className="min-w-full table-auto bg-white border border-gray-200 rounded-md shadow-md">
                     <thead>
@@ -79,14 +78,14 @@ function ProductList() {
                                     >
                                         Delete
                                     </button>
-                                    <Link to={'UpdateProduct/'+item.id}> <button
-                                        type="button"
-                                        onClick={() => deleteOperation(item.id)}
-                                        className=" bg-green-600 px-5 py-2 text-white m-4 rounded-xl"
-                                    >
-                                        
-                                        Update
-                                    </button> </Link>
+                                    <Link to={`/UpdateProduct/${item.id}`}>
+                                        <button
+                                            type="button"
+                                            className="bg-green-600 px-5 py-2 text-white m-4 rounded-xl"
+                                        >
+                                            Update
+                                        </button>
+                                    </Link>
                                 </td>
                             </tr>
                         ))}

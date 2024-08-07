@@ -11,12 +11,12 @@ function Header  ()  {
   }
   return (
     <div>
-      <nav className="bg-black text-white py-4">
+      <nav className="bg-[#1a76bd] text-white py-4">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-4">
           <a href="/" className="text-2xl font-bold  text-white mx-4">
-              E-comm
+              Banks
             </a>
             {
               localStorage.getItem("user-info")?

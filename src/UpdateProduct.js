@@ -1,4 +1,4 @@
-import Header from './Header';
+
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
@@ -67,7 +67,7 @@ function UpdateProduct() {
 
   return (
     <div>
-      <Header />
+     
       <h1>Update Product</h1>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>

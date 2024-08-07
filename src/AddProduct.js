@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Header from './Header';
+
 function AddProduct  () {
   const [name, setName] = useState('');
   const [file, setFile] = useState('');
@@ -29,7 +29,7 @@ alert('Data has been saved')
   };
     return (
       <div>
-        <Header />
+       
         <div className="flex justify-center items-center h-screen">
         <form onSubmit={handleSubmit} className="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
         <div className="mb-4">

@@ -11,3 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+body {
+  background-color: #ffffff; /* Light gray background */
+}
+/* Add this to your main CSS file if needed */
+.main-content {
+  margin-left: 16rem; /* This should match the width of your sidebar (4rem = 16 * 4px) */
+  padding: 1rem; /* Optional: Add padding if needed */
+}

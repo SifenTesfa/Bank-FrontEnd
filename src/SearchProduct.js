@@ -1,4 +1,4 @@
-import Header from './Header';
+
 import React, { useState, useEffect } from 'react';
 
 function SearchProduct() {
@@ -42,7 +42,7 @@ function SearchProduct() {
 
   return (
     <div>
-      <Header />
+    
       <div className="p-4">
         <h1 className="text-xl font-semibold mb-4">Search Products</h1>
         <input
